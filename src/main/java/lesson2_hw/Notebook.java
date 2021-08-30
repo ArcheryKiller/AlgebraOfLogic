@@ -1,3 +1,5 @@
+package lesson2_hw;
+
 public class Notebook implements Comparable<Notebook>{
     private Integer price;
     private Integer ram;
