@@ -1,3 +1,7 @@
+package lesson2_hw;
+
+import lesson2_hw.Notebook;
+
 import java.util.List;
 
 public class SelectionSort {

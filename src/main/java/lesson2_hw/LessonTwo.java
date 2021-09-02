@@ -1,3 +1,5 @@
+package lesson2_hw;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -87,13 +89,13 @@ public class LessonTwo {
 
     public static void showNotebook(List<Notebook> list) {
         for (Notebook n : list) {
-            System.out.printf("Notebook: price - %drub, memory - %dgb, brand - %s\n", n.getPrice(), n.getRam(), n.getBrand());
+            System.out.printf("lesson2_hw.Notebook: price - %drub, memory - %dgb, brand - %s\n", n.getPrice(), n.getRam(), n.getBrand());
         }
     }
 }
 
 /*
-1. Отсортировать массив, состоящий из экземпляров класса Notebook в количестве 5000 штук.
+1. Отсортировать массив, состоящий из экземпляров класса lesson2_hw.Notebook в количестве 5000 штук.
     Условия для сортировки:
 
         1) по цене. От 500 до 1000 долларов с шагом в 100
