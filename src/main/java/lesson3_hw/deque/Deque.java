@@ -1,6 +1,6 @@
 package lesson3_hw.deque;
 
-public interface Deque<E> {
+public interface Deque<E> extends Iterable<E>{
     boolean insertFirst(E value);
 
     boolean insertLast(E value);
