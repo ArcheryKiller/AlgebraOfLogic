@@ -25,9 +25,9 @@ public class TwoSideLinkedListImpl<E> implements TwoSideLinkedList<E> {
         }
     }
 
-    protected Node<E> lastElement;
-    protected Node<E> firstElement;
-    protected int size;
+    private Node<E> lastElement;
+    private Node<E> firstElement;
+    private int size;
 
     @Override
     public void insertFirst(E value) {
