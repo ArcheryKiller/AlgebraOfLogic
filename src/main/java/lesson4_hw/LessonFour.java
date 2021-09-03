@@ -5,6 +5,12 @@ import lesson3_hw.deque.Deque;
 public class LessonFour {
 
     public static void main(String[] args) {
+
+        getValueSideList();
+        getValueDequeList();
+    }
+
+    private static void getValueSideList() {
         TwoSideLinkedList<Integer> twoSideLinkedList = new TwoSideLinkedListImpl<>();
 
         twoSideLinkedList.insertFirst(3);
@@ -23,6 +29,29 @@ public class LessonFour {
         System.out.println("Last element: " + twoSideLinkedList.getLast());
 
         for (Integer value : twoSideLinkedList) {
+            System.out.println("value: " + value);
+        }
+    }
+
+    private static void getValueDequeList() {
+        Deque<Integer> linkedDeque = new LinkedDequeImpl<>();
+
+        linkedDeque.insertFirst(13);
+        linkedDeque.insertLast(16);
+        linkedDeque.insertFirst(10);
+        linkedDeque.insertLast(19);
+        linkedDeque.insertFirst(7);
+
+        linkedDeque.display();
+        System.out.println("First element: " + linkedDeque.peekFirst());
+
+        linkedDeque.removeFirst();
+        linkedDeque.removeLast();
+
+        linkedDeque.display();
+        System.out.println("Last element: " + linkedDeque.peekLast());
+
+        for (Integer value : linkedDeque) {
             System.out.println("value: " + value);
         }
     }

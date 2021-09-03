@@ -1,16 +1,15 @@
 package lesson4_hw;
 
 import lesson3_hw.deque.Deque;
-
 import java.util.Iterator;
 
 public class LinkedDequeImpl<E> implements Deque<E>{
 
-    private final TwoSideLinkedListImpl<E> data;
+    private final TwoSideLinkedList<E> data;
     private int index = 0;
 
-    public LinkedDequeImpl(TwoSideLinkedListImpl<E> data) {
-        this.data = data;
+    public LinkedDequeImpl() {
+        this.data = new TwoSideLinkedListImpl<>();
     }
 
     @Override
@@ -77,6 +76,3 @@ public class LinkedDequeImpl<E> implements Deque<E>{
         return data.iterator();
     }
 }
-
-// Deq:   6 1 2 3 4 5 deq.iterator() == deq.data.iterator()
-// data:  6 1 2 3 4 5
