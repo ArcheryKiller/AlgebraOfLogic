@@ -1,5 +1,7 @@
 package lesson3_hw.deque;
 
+import java.util.Iterator;
+
 public class DequeImpl<E> implements Deque<E>{
 
     private final E[] data;
@@ -100,5 +102,10 @@ public class DequeImpl<E> implements Deque<E>{
         }
         sb.append("]");
         return sb.toString();
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return null;
     }
 }
